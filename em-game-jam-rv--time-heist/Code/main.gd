@@ -22,3 +22,4 @@ func _on_inventroy_gui_opened() -> void:
 
 func _on_timer_timeout() -> void:
 	print("Timer Stop")
+	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")

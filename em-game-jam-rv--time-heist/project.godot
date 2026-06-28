@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="EM GameJam RV: Time Heist"
-run/main_scene="uid://78uucp5h2agf"
+run/main_scene="uid://bb8dlbyvo5lkq"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
