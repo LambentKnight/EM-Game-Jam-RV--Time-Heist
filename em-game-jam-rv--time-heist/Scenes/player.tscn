@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dsx233gtnw450" path="res://Code/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://bvy6eqaq31n83" path="res://Graphics/Sprites/Test/knight.png" id="1_v0iea"]
+[ext_resource type="Resource" uid="uid://b5f0s80wq2o42" path="res://Code/inventory/playerInventory.tres" id="2_vgqql"]
 [ext_resource type="AudioStream" uid="uid://7drpewqlbikv" path="res://Audio/SFX/Test/hurt.wav" id="3_6t5aa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wpjfl"]
@@ -199,6 +200,7 @@ size = Vector2(15, 15)
 [node name="Player" type="CharacterBody2D" unique_id=1825172532]
 scale = Vector2(4, 4)
 script = ExtResource("1_cvnsp")
+inventory = ExtResource("2_vgqql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=849903468]
 sprite_frames = SubResource("SpriteFrames_3xd07")

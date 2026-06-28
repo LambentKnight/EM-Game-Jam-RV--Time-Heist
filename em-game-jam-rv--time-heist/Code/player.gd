@@ -7,6 +7,8 @@ var last_direction: Vector2 = Vector2.RIGHT
 var is_interacting: bool = false
 var hitbox_offset: Vector2
 
+@export var inventory: Inventory
+
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var grab_relic: AudioStreamPlayer2D = $GrabRelic
 @onready var hitbox: Area2D = $Hitbox

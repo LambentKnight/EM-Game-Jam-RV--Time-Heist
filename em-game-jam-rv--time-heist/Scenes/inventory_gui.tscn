@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://cdmpqn3bxkf03"]
 
 [ext_resource type="Texture2D" uid="uid://cki6psinbwrif" path="res://Graphics/UI/Test/InventoryRect.png" id="1_dynga"]
-[ext_resource type="Script" uid="uid://bx42pggdmgyft" path="res://Code/inventroy_gui.gd" id="1_fyh84"]
+[ext_resource type="Script" uid="uid://bx42pggdmgyft" path="res://Code/inventory_gui.gd" id="1_fyh84"]
 [ext_resource type="PackedScene" uid="uid://dbguecf6nsp5x" path="res://Scenes/slot_gui.tscn" id="2_b20qi"]
 
-[node name="InventroyGUI" type="Control" unique_id=401304515]
-custom_minimum_size = Vector2(115, 93)
+[node name="InventoryGUI" type="Control" unique_id=401304515]
+custom_minimum_size = Vector2(301, 245)
 layout_mode = 3
-offset_right = 115.0
-offset_bottom = 93.0
+anchors_preset = 0
+offset_right = 301.0
+offset_bottom = 245.0
 script = ExtResource("1_fyh84")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=717372296]
 layout_mode = 0
 offset_left = 1.0
-offset_right = 115.0
-offset_bottom = 93.0
+offset_right = 300.09677
+offset_bottom = 244.0
 texture = ExtResource("1_dynga")
 patch_margin_left = 6
 patch_margin_top = 6

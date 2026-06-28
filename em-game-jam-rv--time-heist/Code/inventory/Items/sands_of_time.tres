@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://dnhh7d5pxxdjb"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_jkh0d"]
+[ext_resource type="Texture2D" uid="uid://bxlj30vl0alya" path="res://Graphics/Sprites/Test/TestSandsofTime.png" id="2_2b76u"]
+
+[resource]
+script = ExtResource("1_jkh0d")
+name = "SandsOfTime"
+texture = ExtResource("2_2b76u")
+metadata/_custom_type_script = "uid://c2biyvijss4x6"
