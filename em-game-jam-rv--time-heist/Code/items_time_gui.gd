@@ -8,7 +8,7 @@ class_name ItemTimeGui
 var inventorySlot: InventorySlot
 
 func update():
-	if !inventorySlot || inventorySlot.item: return
+	if !inventorySlot || !inventorySlot.item: return
 	
 	itemSprite.visible = true
 	itemSprite.texture = inventorySlot.item.texture

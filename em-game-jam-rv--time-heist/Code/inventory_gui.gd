@@ -10,11 +10,11 @@ var isOpen: bool = false
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children()
 
 func _ready():
-	connectedSlots()
+	connectSlots()
 	inventory.updated.connect(update)
 	update()
 
-func connectedSlots():
+func connectSlots():
 	for slot in slots:
 		var callable = Callable(onSlotClicked)
 		callable = callable.bind(slot)
@@ -33,6 +33,7 @@ func update():
 		
 		itemTimeGui.inventorySlot = inventorySlot
 		itemTimeGui.update()
+		print("test")
 			
 
 func open():
@@ -45,5 +46,5 @@ func close():
 	isOpen = false
 	closed.emit()
 
-func onSlotClicked(slot):
+func onSlotClicked(_slot):
 	pass

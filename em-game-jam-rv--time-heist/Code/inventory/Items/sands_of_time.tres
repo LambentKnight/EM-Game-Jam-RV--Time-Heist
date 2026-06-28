@@ -7,4 +7,5 @@
 script = ExtResource("1_jkh0d")
 name = "SandsOfTime"
 texture = ExtResource("2_2b76u")
+timeLeft = 11
 metadata/_custom_type_script = "uid://c2biyvijss4x6"
