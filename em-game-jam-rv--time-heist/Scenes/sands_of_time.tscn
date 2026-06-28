@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://cb0covfvyqmyk"]
 
 [ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="1_a8id1"]
+[ext_resource type="Script" uid="uid://bdgq6hmuiylms" path="res://Code/inventory/Items/sands_of_time.gd" id="2_1d4qv"]
 [ext_resource type="Texture2D" uid="uid://bxlj30vl0alya" path="res://Graphics/Sprites/Test/TestSandsofTime.png" id="2_ofyvx"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d4qv"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ofyvx"]
 resource_local_to_scene = true
 size = Vector2(32, 40)
 
 [node name="SandsOfTime" unique_id=1601422085 instance=ExtResource("1_a8id1")]
+script = ExtResource("2_1d4qv")
+itemRes = null
 
 [node name="CollisionShape2D" parent="." index="0" unique_id=119808828]
-shape = SubResource("RectangleShape2D_1d4qv")
+shape = SubResource("RectangleShape2D_ofyvx")
 
 [node name="Sprite2D" parent="." index="1" unique_id=611568459]
 scale = Vector2(0.7, 0.7)

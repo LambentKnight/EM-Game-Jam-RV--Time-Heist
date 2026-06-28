@@ -12,7 +12,6 @@ func _ready() -> void:
 func _on_inventroy_gui_closed() -> void:
 	get_tree().paused = false
 	$Timer.paused = false
-	$Timer.start()
 
 
 func _on_inventroy_gui_opened() -> void:

@@ -3,8 +3,6 @@ extends Area2D
 @onready var grabbed_sound: AudioStreamPlayer2D = $GrabbedSound
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 
-
-
 @export var itemRes: InventoryItem
 
 func collect(inventory: Inventory):
@@ -19,4 +17,3 @@ func _on_area_entered(area: Area2D) -> void:
 		
 		grabbed_sound.play()
 		await grabbed_sound.finished
-		
