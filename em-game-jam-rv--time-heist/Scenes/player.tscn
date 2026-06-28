@@ -209,16 +209,14 @@ frame = 3
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=876416250]
-visible = false
 position = Vector2(-0.875, 6.5)
 shape = SubResource("RectangleShape2D_jq8tk")
-disabled = true
 
 [node name="GrabRelic" type="AudioStreamPlayer2D" parent="." unique_id=1925244837]
 stream = ExtResource("3_6t5aa")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=940237455]
-position = Vector2(7.5, 3)
+position = Vector2(12, 3)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1558447035]
