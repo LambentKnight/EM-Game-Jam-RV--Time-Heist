@@ -1,8 +1,43 @@
 [gd_scene format=3 uid="uid://78uucp5h2agf"]
 
+[ext_resource type="Script" uid="uid://dhcnqbjv0pex3" path="res://Code/main.gd" id="1_7i1ub"]
 [ext_resource type="PackedScene" uid="uid://cjsxx124i0aqm" path="res://Scenes/player.tscn" id="1_s0gyx"]
+[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="2_yjsus"]
+[ext_resource type="Script" uid="uid://rv83xat7c1qq" path="res://Code/canvas_layer.gd" id="3_nk5xi"]
+[ext_resource type="PackedScene" uid="uid://cdmpqn3bxkf03" path="res://Scenes/inventroy_gui.tscn" id="3_u872a"]
 
 [node name="Main" type="Node2D" unique_id=414643058]
+script = ExtResource("1_7i1ub")
 
 [node name="Player" parent="." unique_id=1825172532 instance=ExtResource("1_s0gyx")]
 position = Vector2(376, 217)
+
+[node name="Items" type="Node2D" parent="." unique_id=1946798638]
+
+[node name="RelicPickup" parent="Items" unique_id=1601422085 instance=ExtResource("2_yjsus")]
+position = Vector2(663, 228)
+
+[node name="RelicPickup2" parent="Items" unique_id=1720746370 instance=ExtResource("2_yjsus")]
+position = Vector2(749, 351)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=862627433]
+process_mode = 3
+follow_viewport_enabled = true
+follow_viewport_scale = 3.0
+script = ExtResource("3_nk5xi")
+
+[node name="InventroyGUI" parent="CanvasLayer" unique_id=401304515 instance=ExtResource("3_u872a")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.5
+offset_top = -46.5
+offset_right = 57.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="closed" from="CanvasLayer/InventroyGUI" to="." method="_on_inventroy_gui_closed"]
+[connection signal="opened" from="CanvasLayer/InventroyGUI" to="." method="_on_inventroy_gui_opened"]

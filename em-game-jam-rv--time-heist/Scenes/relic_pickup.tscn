@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bsv1mmtajh0vy"]
+
+[ext_resource type="Texture2D" uid="uid://mmi45hrvk7f2" path="res://Graphics/Sprites/Test/coin.png" id="1_ffd7x"]
+[ext_resource type="Script" uid="uid://oobgs242dyx" path="res://Code/relic_pickup.gd" id="1_lqmyt"]
+[ext_resource type="AudioStream" uid="uid://bhn8bfdpwc525" path="res://Audio/SFX/Test/coin.wav" id="3_mi6g6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(32, 40)
+
+[node name="RelicPickup" type="Area2D" unique_id=1601422085]
+script = ExtResource("1_lqmyt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=611568459]
+scale = Vector2(4, 4)
+texture = ExtResource("1_ffd7x")
+hframes = 12
+frame = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=119808828]
+shape = SubResource("RectangleShape2D_3xd07")
+
+[node name="GrabbedSound" type="AudioStreamPlayer2D" parent="." unique_id=2081133614]
+stream = ExtResource("3_mi6g6")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
