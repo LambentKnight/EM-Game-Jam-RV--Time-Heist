@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dhcnqbjv0pex3" path="res://Code/main.gd" id="1_7i1ub"]
 [ext_resource type="PackedScene" uid="uid://cjsxx124i0aqm" path="res://Scenes/player.tscn" id="1_s0gyx"]
-[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="2_yjsus"]
 [ext_resource type="Script" uid="uid://rv83xat7c1qq" path="res://Code/canvas_layer.gd" id="3_nk5xi"]
 [ext_resource type="PackedScene" uid="uid://cdmpqn3bxkf03" path="res://Scenes/inventory_gui.tscn" id="3_u872a"]
+[ext_resource type="PackedScene" uid="uid://cb0covfvyqmyk" path="res://Scenes/sands_of_time.tscn" id="6_w0lsm"]
 
 [node name="Main" type="Node2D" unique_id=414643058]
 script = ExtResource("1_7i1ub")
@@ -14,11 +14,11 @@ position = Vector2(376, 217)
 
 [node name="Items" type="Node2D" parent="." unique_id=1946798638]
 
-[node name="RelicPickup" parent="Items" unique_id=1601422085 instance=ExtResource("2_yjsus")]
-position = Vector2(663, 228)
+[node name="SandsOfTime" parent="Items" unique_id=240618498 instance=ExtResource("6_w0lsm")]
+position = Vector2(810, 228)
 
-[node name="RelicPickup2" parent="Items" unique_id=1720746370 instance=ExtResource("2_yjsus")]
-position = Vector2(749, 351)
+[node name="SandsOfTime2" parent="Items" unique_id=1601422085 instance=ExtResource("6_w0lsm")]
+position = Vector2(864, 393)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=862627433]
 process_mode = 3

@@ -106,3 +106,4 @@ func _on_hitbox_area_entered(area: Area2D) -> void:
 	if is_interacting:
 		print(area)
 		print("Grab")
+		area.collect(inventory)
