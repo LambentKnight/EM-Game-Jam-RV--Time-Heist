@@ -1413,6 +1413,8 @@ script = ExtResource("1_7i1ub")
 [node name="Player" parent="." unique_id=1825172532 instance=ExtResource("1_s0gyx")]
 position = Vector2(376, 217)
 
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=600282958]
+
 [node name="Items" type="Node2D" parent="." unique_id=1946798638]
 
 [node name="SandsOfTime" parent="Items" unique_id=240618498 instance=ExtResource("6_w0lsm")]
