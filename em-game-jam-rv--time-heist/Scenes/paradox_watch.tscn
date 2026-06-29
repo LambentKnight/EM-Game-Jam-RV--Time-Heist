@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bfo06nvygj3ms"]
+
+[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="1_5iwcn"]
+[ext_resource type="Script" uid="uid://dercnq65t2cuw" path="res://Code/inventory/Items/paradox_watch.gd" id="2_1gbu7"]
+[ext_resource type="Resource" uid="uid://c0ay3kehfey8p" path="res://Code/inventory/Items/paradox_watch.tres" id="3_o0r20"]
+[ext_resource type="Texture2D" uid="uid://b7x68u7sn46ps" path="res://Graphics/Textures/DMills_GameJam2026_PockectWatch.png" id="4_gxhth"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5iwcn"]
+resource_local_to_scene = true
+size = Vector2(32, 40)
+
+[node name="ParadoxWatch" unique_id=1601422085 instance=ExtResource("1_5iwcn")]
+script = ExtResource("2_1gbu7")
+itemRes = ExtResource("3_o0r20")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=119808828]
+shape = SubResource("RectangleShape2D_5iwcn")
+
+[node name="Sprite2D" parent="." index="1" unique_id=611568459]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_gxhth")
+hframes = 1
+frame = 0

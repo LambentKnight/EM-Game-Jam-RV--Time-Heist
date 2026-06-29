@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dtgn0vffodcyj"]
+
+[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="1_x0qrc"]
+[ext_resource type="Script" uid="uid://daurj8obxm5gj" path="res://Code/inventory/Items/eyeof_x.gd" id="2_sy5qv"]
+[ext_resource type="Resource" uid="uid://dwx3gphn7cnga" path="res://Code/inventory/Items/EyeOfX.tres" id="3_hwasi"]
+[ext_resource type="Texture2D" uid="uid://dacvinuxpt1y2" path="res://Graphics/Textures/DMills_GameJam2026_Key.png" id="4_628x6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0oafy"]
+resource_local_to_scene = true
+size = Vector2(32, 40)
+
+[node name="EyeofX" unique_id=1601422085 instance=ExtResource("1_x0qrc")]
+script = ExtResource("2_sy5qv")
+itemRes = ExtResource("3_hwasi")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=119808828]
+shape = SubResource("RectangleShape2D_0oafy")
+
+[node name="Sprite2D" parent="." index="1" unique_id=611568459]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_628x6")
+hframes = 1
+frame = 0

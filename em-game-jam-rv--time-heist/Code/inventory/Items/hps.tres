@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://bcujhthudqd5w"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_wyokj"]
+[ext_resource type="Texture2D" uid="uid://c35nu6x66ssku" path="res://Graphics/Textures/DMills_GameJam2026_ThothStatue.png" id="2_slqc6"]
+
+[resource]
+script = ExtResource("1_wyokj")
+name = "H.P.'s Statue"
+texture = ExtResource("2_slqc6")
+timeLeft = 88
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

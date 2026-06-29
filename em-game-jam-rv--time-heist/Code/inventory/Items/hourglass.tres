@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://laryga0wwp7a"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_2t0nh"]
+[ext_resource type="Texture2D" uid="uid://bvrjbhl300ckr" path="res://Graphics/Textures/DMills_GameJam2026_Hourglass.png" id="2_pmeu5"]
+
+[resource]
+script = ExtResource("1_2t0nh")
+name = "Hourglass"
+texture = ExtResource("2_pmeu5")
+timeLeft = 13
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

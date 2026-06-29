@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://bmn4toeudn5ru"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_j2v77"]
+[ext_resource type="Texture2D" uid="uid://cdf3qvb16ei7r" path="res://Graphics/Textures/DMills_GameJam2026_EggTimer.png" id="2_c8se4"]
+
+[resource]
+script = ExtResource("1_j2v77")
+name = "EggTimer"
+texture = ExtResource("2_c8se4")
+timeLeft = 5
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

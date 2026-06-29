@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://c0ay3kehfey8p"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_vbgpk"]
+[ext_resource type="Texture2D" uid="uid://b7x68u7sn46ps" path="res://Graphics/Textures/DMills_GameJam2026_PockectWatch.png" id="2_mw5lg"]
+
+[resource]
+script = ExtResource("1_vbgpk")
+name = "ParadoxWatch"
+texture = ExtResource("2_mw5lg")
+timeLeft = 8
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

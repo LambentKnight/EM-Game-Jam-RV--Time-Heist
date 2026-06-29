@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://l7fu82hdgx60"]
+
+[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="1_eybkb"]
+[ext_resource type="Resource" uid="uid://bmn4toeudn5ru" path="res://Code/inventory/Items/egg_timer.tres" id="2_e2a4b"]
+[ext_resource type="Script" uid="uid://cqg0p4cfc3ngt" path="res://Code/inventory/Items/egg_timer.gd" id="2_p3qp5"]
+[ext_resource type="Texture2D" uid="uid://cdf3qvb16ei7r" path="res://Graphics/Textures/DMills_GameJam2026_EggTimer.png" id="3_p3qp5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1n1a"]
+resource_local_to_scene = true
+size = Vector2(32, 40)
+
+[node name="eggTimer" unique_id=1601422085 instance=ExtResource("1_eybkb")]
+script = ExtResource("2_p3qp5")
+itemRes = ExtResource("2_e2a4b")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=119808828]
+shape = SubResource("RectangleShape2D_n1n1a")
+
+[node name="Sprite2D" parent="." index="1" unique_id=611568459]
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("3_p3qp5")
+hframes = 1
+frame = 0

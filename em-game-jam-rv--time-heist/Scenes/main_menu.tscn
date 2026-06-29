@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bb8dlbyvo5lkq"]
 
 [ext_resource type="Script" uid="uid://31jiwscm44w2" path="res://Code/main_menu.gd" id="1_28flt"]
+[ext_resource type="AudioStream" uid="uid://doqfvxnld1fnj" path="res://Audio/Music/TittleScreen.ogg" id="2_48xlc"]
+[ext_resource type="Texture2D" uid="uid://cddykl7e53hxw" path="res://Graphics/Textures/GAme_Jam_Logo.png" id="3_1ehe0"]
 
 [node name="Main Menu" type="Node2D" unique_id=11074504]
 script = ExtResource("1_28flt")
@@ -26,6 +28,19 @@ offset_top = 507.0
 offset_right = 701.0
 offset_bottom = 571.0
 text = "Quit"
+
+[node name="TextureButton" type="TextureButton" parent="Button_manager" unique_id=594589948]
+z_index = -6
+layout_mode = 0
+offset_left = 342.0
+offset_top = 53.0
+offset_right = 856.0
+offset_bottom = 350.0
+button_mask = 0
+texture_normal = ExtResource("3_1ehe0")
+
+[node name="title" type="AudioStreamPlayer2D" parent="." unique_id=1812904234]
+stream = ExtResource("2_48xlc")
 
 [connection signal="pressed" from="Button_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bh46ktkxwkhov"]
+
+[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="1_4vkqt"]
+[ext_resource type="Script" uid="uid://b818cv5ctfgvl" path="res://Code/inventory/Items/out_of_time.gd" id="2_aje82"]
+[ext_resource type="Resource" uid="uid://cdh8tpuforhee" path="res://Code/inventory/Items/oot.tres" id="3_rt0fs"]
+[ext_resource type="Texture2D" uid="uid://cv8wodt75uedu" path="res://Graphics/Textures/DMills_GameJam2026_WristWatch.png" id="4_npaa6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0oofl"]
+resource_local_to_scene = true
+size = Vector2(32, 40)
+
+[node name="OutOfTime" unique_id=1601422085 instance=ExtResource("1_4vkqt")]
+script = ExtResource("2_aje82")
+itemRes = ExtResource("3_rt0fs")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=119808828]
+shape = SubResource("RectangleShape2D_0oofl")
+
+[node name="Sprite2D" parent="." index="1" unique_id=611568459]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_npaa6")
+hframes = 1
+frame = 0

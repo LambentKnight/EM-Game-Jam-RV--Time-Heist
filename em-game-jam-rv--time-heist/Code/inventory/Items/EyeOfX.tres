@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://dwx3gphn7cnga"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_11o46"]
+[ext_resource type="Texture2D" uid="uid://dacvinuxpt1y2" path="res://Graphics/Textures/DMills_GameJam2026_Key.png" id="2_cfcuh"]
+
+[resource]
+script = ExtResource("1_11o46")
+name = "EyeOfX"
+texture = ExtResource("2_cfcuh")
+timeLeft = 20
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://coptakkpdxjop"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_1kpiy"]
+[ext_resource type="Texture2D" uid="uid://bxlhbett6qax7" path="res://Graphics/Textures/DMills_GameJam2026_SaturnStatue.png" id="2_d0iac"]
+
+[resource]
+script = ExtResource("1_1kpiy")
+name = "Saturn's Orbit"
+texture = ExtResource("2_d0iac")
+timeLeft = 21
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

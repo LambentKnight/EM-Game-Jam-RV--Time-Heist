@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://cdh8tpuforhee"]
+
+[ext_resource type="Script" uid="uid://c2biyvijss4x6" path="res://Code/inventory/inventoryItems.gd" id="1_4g8uf"]
+[ext_resource type="Texture2D" uid="uid://cv8wodt75uedu" path="res://Graphics/Textures/DMills_GameJam2026_WristWatch.png" id="2_r1sk0"]
+
+[resource]
+script = ExtResource("1_4g8uf")
+name = "Out of Time"
+texture = ExtResource("2_r1sk0")
+timeLeft = 3
+metadata/_custom_type_script = "uid://c2biyvijss4x6"

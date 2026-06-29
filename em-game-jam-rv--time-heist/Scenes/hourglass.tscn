@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ym36l5hdh1te"]
+
+[ext_resource type="PackedScene" uid="uid://bsv1mmtajh0vy" path="res://Scenes/relic_pickup.tscn" id="1_16xga"]
+[ext_resource type="Script" uid="uid://dhkvswippe70c" path="res://Code/inventory/Items/hourglass.gd" id="2_ckngp"]
+[ext_resource type="Resource" uid="uid://laryga0wwp7a" path="res://Code/inventory/Items/hourglass.tres" id="3_s21ph"]
+[ext_resource type="Texture2D" uid="uid://bvrjbhl300ckr" path="res://Graphics/Textures/DMills_GameJam2026_Hourglass.png" id="4_kp4vl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ikt1"]
+resource_local_to_scene = true
+size = Vector2(32, 40)
+
+[node name="Hourglass" unique_id=1601422085 instance=ExtResource("1_16xga")]
+script = ExtResource("2_ckngp")
+itemRes = ExtResource("3_s21ph")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=119808828]
+shape = SubResource("RectangleShape2D_2ikt1")
+
+[node name="Sprite2D" parent="." index="1" unique_id=611568459]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_kp4vl")
+hframes = 1
+frame = 0
